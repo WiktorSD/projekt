@@ -6,6 +6,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    srand( time( NULL ) );
+
 }
 
 MainWindow::~MainWindow()
@@ -13,3 +15,11 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+
+void MainWindow::on_pushButton_clicked()
+{
+    losowa = std::rand();
+    ui->textEdit->setText(QString::number(losowa));
+
+
+}

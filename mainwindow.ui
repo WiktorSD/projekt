@@ -6,25 +6,35 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>894</width>
+    <height>599</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>70</y>
-      <width>181</width>
-      <height>111</height>
+      <x>180</x>
+      <y>190</y>
+      <width>161</width>
+      <height>91</height>
      </rect>
     </property>
     <property name="text">
-     <string>Papier kamień nożyce</string>
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>200</y>
+      <width>104</width>
+      <height>71</height>
+     </rect>
     </property>
    </widget>
   </widget>
@@ -33,7 +43,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>894</width>
      <height>21</height>
     </rect>
    </property>
