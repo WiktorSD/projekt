@@ -5,6 +5,8 @@
 #include <cstdlib>
 #include <ctime>
 #include <QString>
+#include <fstream>
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -23,5 +25,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     int losowa;
+    std::fstream file;
+
 };
 #endif // MAINWINDOW_H

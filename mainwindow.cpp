@@ -7,7 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     srand( time( NULL ) );
-
+    file.open("losowe.txt",std::ios::in);
 }
 
 MainWindow::~MainWindow()
@@ -19,6 +19,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButton_clicked()
 {
     losowa = std::rand();
+    file<<losowa<<"\n";
     ui->textEdit->setText(QString::number(losowa));
 
 
