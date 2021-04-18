@@ -26,6 +26,7 @@ private:
     Ui::MainWindow *ui;
     int losowa;
     std::fstream file;
-
+    QString ilosc;
+    int zapis;
 };
 #endif // MAINWINDOW_H
